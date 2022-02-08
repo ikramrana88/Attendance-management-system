@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %} Attendende Mangement System | Home</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: #F1F2F4;
+        }
+
+        #navbar {
+            padding: 16px 0px;
+            background-color: rgb(22, 72, 112);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            width: 100vw;
+
+        }
+
+        .navigation {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            color: white;
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+
+        .navigation:hover {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            background-color: white;
+            color: rgb(22, 72, 112);
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+
+        .navigation:active {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            background-color: white;
+            color: rgb(22, 72, 112);
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+
+        .btn {
+            /* right: 50px; */
+            margin-left: 30px;
+            padding: 10px 10px;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            color: rgb(22, 72, 112);
+            border: none;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+        
+
+        @media screen and (max-width: 1024px) {
+
+
+            #navbar {
+                padding: 14px 0px;
+                background-color: rgb(22, 72, 112);
+                display: flex;
+                justify-content: left;
+                align-content: left;
+                align-items: left;
+                width: 100vw;
+                flex-flow: row;
+                flex-wrap: wrap;
+                padding-left: 50px;
+
+            }
+
+            .navigation {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                color: white;
+                padding: 10px 8px;
+                text-decoration: none;
+            }
+
+            .btn {
+
+                margin-left: 10px;
+                padding: 10px 8px;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                color: rgb(22, 72, 112);
+                border: none;
+                text-decoration: none;
+                font-weight: bold;
+                cursor: pointer;
+
+            }
+
+             
+
+        }
+
+        @media screen and (max-width: 778px) {
+
+
+            #navbar {
+                padding: 14px 0px;
+                background-color: rgb(22, 72, 112);
+                display: flex;
+                justify-content: left;
+                align-content: left;
+                align-items: left;
+                width: 100vw;
+                flex-flow: row;
+                flex-wrap: wrap;
+                padding-left: 30px;
+
+            }
+
+            .navigation {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                color: white;
+                padding: 10px 8px;
+                text-decoration: none;
+            }
+
+            .btn {
+
+                margin-left: 10px;
+                padding: 10px 8px;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                color: rgb(22, 72, 112);
+                border: none;
+                text-decoration: none;
+                font-weight: bold;
+                cursor: pointer;
+
+            }
+
+                        
+
+        }
+
+        @media screen and (max-width: 480px) {
+
+
+             
+            #navbar {
+                padding: 14px 0px;
+                background-color: rgb(22, 72, 112);
+                display: flex;
+                justify-content: left;
+                align-content: left;
+                align-items: left;
+                width: 100vw;
+                flex-flow: row;
+                flex-wrap: wrap;
+                padding-left: 20px;
+
+            }
+
+            .navigation {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                color: white;
+                padding: 10px 8px;
+                text-decoration: none;
+            }
+
+            .btn {
+
+                margin-left: 10px;
+                padding: 10px 8px;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                color: rgb(22, 72, 112);
+                border: none;
+                text-decoration: none;
+                font-weight: bold;
+                cursor: pointer;
+
+            }
+
+                    
+            }     
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+{% block body %}{% endblock body %}
+    <nav id="navbar">
+        <a href="home.html" class="navigation">Home</a>
+        <a href="Teacher.html" class="navigation">Teachers</a>
+        <a href="student.html" class="navigation">Students</a>
+        <a href="Subject.html" class="navigation">Subjects</a>
+        <a href="reports.html" class="navigation">Report</a>
+        <a href="takeattendance.html" class="navigation">Take Attendence</a>
+        <a href="addTeacher.html" class="navigation">Add Teacher</a>
+        <a href="addstudent.html" class="navigation">Add Student</a>
+        <a href="addsubject.html" class="navigation">Add Subject</a>
+
+
+        <button class="btn">Log Out</button>
+    </nav>
+</body>
+
+</html>

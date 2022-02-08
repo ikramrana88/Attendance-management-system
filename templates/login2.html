@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <title>
+        Login | Attendende Mangement System
+    </title>
+
+
+    <style>
+        body {
+            background-color:  rgb(24, 24, 24);
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #mono h2{
+
+            font-size: 40px;
+            color:  rgb(226, 125, 58);
+            text-align: center;
+            margin:60px auto;
+         
+        max-width: 700px;
+        position: relative;
+        }
+    #mono h2:before {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 5px;
+        background:  rgb(226, 125, 58);
+        left: 10px;
+        top: 50%;
+        position: absolute;
+      }
+      #mono h2:after {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 5px;
+        background: rgb(226, 125, 58);
+        right: 10px;
+        top: 50%;
+        position: absolute;
+      }
+        .center {
+
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+
+        }
+
+        #box { 
+            width: 450px;
+            box-sizing: border-box;
+            align-content: flex-start;
+            padding: 20px;
+            border: 2px solid  rgb(226, 125, 58);
+            border-radius: 20px;
+
+        }
+        #box h3{
+            font-size: 25px;
+            color: rgb(226, 125, 58);
+            padding:0px;
+            margin-top:10px; 
+        
+        }
+       
+        .info label{
+            color:  white;
+            font-size:17px;
+             
+        }
+
+        .info input {
+            margin-top: 8px;
+            width: 400px;
+            height: 35px;
+            border:none;
+        font-size:15px;
+            padding-left: 10px;
+            border-radius:5px;
+        }
+
+        .login input {
+            color: white;
+            background-color: rgb(226, 125, 58);
+            padding: 8px 15px;
+            font-size: 17;
+            border: none;
+            cursor: pointer;
+             border-radius:5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mono">
+        <h2>Welcome To LOG IN</h2>
+    </div>
+    <div class="center">
+        <div id="box">
+            <h3>Please Log In</h3>
+            <hr>
+
+            <form class="form" method="post" action="/login">
+        {% csrf_token %}
+                <div class="Info"><br>
+                    <label for="">User Name :</label>
+                    <input type="text" id="username" name="username" placeholder="User name" required>
+                    <br><br>
+                    <label for="">Password</label>
+                    <input type="password" id= "password" name="password" placeholder="Password" required>
+                </div>
+
+                 
+                <div class="LOGIN">
+                    <br>
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence Management System</title>
+ 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:  rgb(24, 24, 24);
+            margin: 0px;
+            padding: 0px;
+            padding-top: 10px;
+            
+        }
+        #container {
+            
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+        }
+        #container img{
+            margin-top: 5px;
+            margin-bottom: -10px;
+            width: 200px;
+            height: 150px;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #container h1{
+            text-align: center;
+            margin: 0px 100px;
+            margin-bottom: 30px;
+            color: rgb(226, 125, 58) ;
+            font-size: 60px;
+            font-weight:bold;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1.5px;
+
+        }
+        #container2 {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+        }
+
+        .button{
+            
+            margin: 20px;
+        }
+        .btn{
+            width: 300px;
+            padding: 15px 0px;
+        font-size: 35px;
+        font-family: 'Playfair Display', serif;
+      
+        color: white;
+        background-color: rgb(226, 125, 58) ;
+        border:none;
+        border-radius: 40px;
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        }
+        .btn:hover{
+            opacity: 0.9;
+            color:rgb(226, 125, 58);
+            background-color: white;
+        }
+        @media screen and (max-width: 1024px) {
+            
+            #container {
+            
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+        }
+
+            #container h1{
+            text-align: center;
+            margin: 0px 5px;
+            margin-bottom: 30px;
+            color: rgb(226, 125, 58) ;
+            font-size: 45px;
+            font-weight:bold;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+
+        }
+
+         .button{
+             margin: 10px;
+         }
+         
+        .btn{
+            width: 220px;
+            padding: 7px 0px;
+        font-size: 28px;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        color:white;
+        background-color:rgb(226, 125, 58) ;
+        border:none;
+        border-radius: 40px;
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        }   
+
+        }
+        @media screen and (max-width: 777px) {
+             
+            #container {
+            
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+        }
+
+            #container h1{
+            text-align: center;
+            margin: 0px 5px;
+            margin-bottom: 30px;
+            color: rgb(226, 125, 58) ;
+            font-size: 40px;
+            font-weight:bold;
+            font-family: 'Playfair Display', serif;
+
+        }
+        #container2{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            flex-flow: row;
+            flex-wrap: wrap;
+        }
+         .button{
+             margin: 7px;
+         }
+         
+        .btn{
+            width: 220px;
+            padding: 10px 0px;
+        font-size: 27px;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        color: white;
+        background-color:rgb(226, 125, 58) ;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+
+        }   
+
+        }
+        @media screen and (max-width: 480px) {
+            
+            #container {
+            
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+        }
+
+            #container h1{
+            text-align: center;
+            margin: 0px 3px;
+            margin-bottom: 30px;
+            color:  rgb(226, 125, 58) ;
+            font-size: 33px;
+            font-weight:bold;
+            font-family: 'Playfair Display', serif;
+
+        }
+        #container2{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            flex-flow: row;
+            flex-wrap: wrap;
+        }
+         .button{
+             margin: 7px;
+         }
+         
+        .btn{
+            width: 220px;
+            padding: 10px 0px;
+        font-size: 27px;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        color: white ;
+        background-color:rgb(226, 125, 58) ;
+        border:none;
+        border-radius: 40px;
+        cursor: pointer;
+
+        }   
+
+        }
+
+</style>
+</head>
+
+<body>
+    <div id="container">
+        <img src="static/home-img.png" alt="">
+        <h1>Welcome to<br>Attendence Management System</h1>
+
+    </div>
+    <div id="container2">
+        <div class="button">
+          <a href="login"  ><button class="btn">Administrator</button></a>
+        </div>
+
+        <div class="button">
+       <a href="teacher-login" ><button class="btn">Teachers</button></a>
+        </div>
+
+        <div class="button">
+            <button class="btn">Students</button>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

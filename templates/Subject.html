@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects | Attendende Mangement System</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: white;
+            /* background-image: url('back.jpg'); */
+        }
+
+        .top{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: 0px;
+            height: 105px;
+            background-color:rgb(45, 47, 49);
+        }
+        .logo img{
+            width: 120px;
+            height: 90px;
+            
+        }
+        .logotext{
+            color: white;
+            font-size: 12px; 
+            font-family: 'Playfair Display', serif;
+            width: 200px; 
+            padding: 18px 12px;
+        }
+      
+        #navbar {
+            padding: 10px 0px;
+            /* background-color: rgb(22, 72, 112); */
+            background-color:  rgb(226, 125, 58);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            width: 100vw;
+            margin-top: -10px;
+     
+
+        }
+
+        .navigation {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+        }
+
+        .navigation:hover {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            background-color: white;
+            color:rgb(226, 125, 58) ;
+            padding: 8px 12px;
+            text-decoration: none;
+            border: 2px;
+            border-radius: 20px;
+        }
+
+        .navigation:active {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            background-color: white;
+            color: rgb(226, 125, 58);
+            padding: 8px 12px;
+            text-decoration: none;
+            border: 2px;
+            border-radius: 20px;
+        }
+
+        .btn {
+            /* right: 50px; */
+            margin-left: 30px;
+            padding: 7px 13px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            color: rgb(226, 125, 58);
+            border: 2px;
+            border-radius: 20px;
+            text-decoration: none;
+            /* font-weight: bold; */
+            cursor: pointer;
+
+        }
+        .btn:hover {
+            /* right: 50px; */
+            margin-left: 30px;
+            padding: 7px 13px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            color: rgb(45, 47, 49);
+            border: 2px;
+            border-radius: 20px;
+            text-decoration: none;
+            /* font-weight: bold; */
+            cursor: pointer;
+
+        }
+
+        .row{
+            width:200px;
+            height:35px;
+            font-size:17px;
+            border:1px solid black;
+          padding-left:10px;
+
+            
+            
+        }
+        .table-heading{
+           width:200px;
+            height:35px;
+            font-size:20px;
+            text-align:left;
+            border:1px solid black;
+          padding-left:10px;
+        }
+        .content{
+            padding:100px 100px;
+        }
+
+        
+        }
+        
+
+        @media screen and (max-width: 1024px) {
+
+
+            #navbar {
+                padding: 10px 0px;
+                background-color:  rgb(226, 125, 58);
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                width: 100vw;
+                margin-top: -10px;
+         flex-wrap:wrap;
+    
+            }
+    
+
+             
+            .navigation {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: white;
+                padding: 8px 9px;
+                text-decoration: none;
+            }
+            .btn {
+       
+                margin-left: 10px;
+                padding: 5px 10px;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                color: rgb(226, 125, 58);
+                border: 2px;
+                border-radius: 20px;
+                text-decoration: none;
+                
+                cursor: pointer;
+    
+            }
+            
+            
+ 
+
+        }
+
+        @media screen and (max-width: 778px) {
+
+            #navbar {
+                padding: 10px 0px;
+                background-color:  rgb(226, 125, 58);
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                width: 100vw;
+                margin-top: -10px;
+         flex-wrap:wrap;
+    
+            }
+    
+
+             
+            .navigation {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: white;
+                padding: 8px 9px;
+                text-decoration: none;
+            }
+            .btn {
+       
+                margin-left: 10px;
+                padding: 5px 10px;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                color: rgb(226, 125, 58);
+                border: 2px;
+                border-radius: 20px;
+                text-decoration: none;
+                
+                cursor: pointer;
+    
+            }
+            
+         
+        }
+
+        @media screen and (max-width: 480px) {
+
+            .top{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items:center;
+                margin: 0px auto;
+                height: 85px;
+                width: 100vw;
+                
+                background-color:rgb(45, 47, 49);
+                
+            }
+
+             
+            .logo img{
+                width: 90px;
+                height: 70px;
+                
+            }
+            .logotext{
+                color: white;
+                font-size: 10px; 
+                font-family: 'Playfair Display', serif;
+                width: 170px; 
+                padding: 13px 10px;
+            }
+            #navbar {
+                padding: 10px 0px;
+                background-color:  rgb(226, 125, 58);
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                width: 100vw;
+                margin-top: -10px;
+         flex-wrap:wrap;
+    
+            }
+    
+
+             
+            .navigation {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: white;
+                padding: 8px 9px;
+                text-decoration: none;
+            }
+             
+            .btn {
+       
+                margin-left: 10px;
+                padding: 3px 8px;
+                font-size: 14px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                color: rgb(226, 125, 58);
+                border: 2px;
+                border-radius: 20px;
+                text-decoration: none;
+                
+                cursor: pointer;
+    
+            }
+             
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">
+         <img src="static/logo.jpg" alt="">
+        </div>
+        <div class="logotext">
+            <h2>ATTENDANCE MANAGEMENT SYSTEM </h2>
+
+        </div>
+    </div>
+    <nav id="navbar">
+       <a href="home" class="navigation">Home</a>
+        <a href="teachers" class="navigation">Teachers</a>
+        <a href="students" class="navigation">Students</a>
+        <a href="subjects" class="navigation">Subjects</a>
+        <a href="reports" class="navigation">Report</a>
+        <a href="takeattendance" class="navigation">Take Attendence</a>
+        <a href="addteacher" class="navigation">Add Teacher</a>
+        <a href="addstudent" class="navigation">Add Student</a>
+        <a href="addsubject" class="navigation">Add Subject</a>
+
+
+        <a href="logout"><button class="btn"> Log Out</button></a>
+    </nav>
+
+
+     <div class="content">
+     <table CELLSPACING=0>
+     <tr>
+    <th class="table-heading">Subject Name</th>
+    <th class="table-heading">Department</th>
+    <th class="table-heading">Semester</th>
+    <th class="table-heading">Teacher Name</th>
+
+
+    </tr>
+     </table>
+    {% for subject in subjects_info %}
+    <table CELLSPACING=0>
+    <tr>
+    <td class="row">
+     {{subject.subject_name}}
+    </td>
+    <td class="row">
+     {{subject.department}}
+    </td>
+    <td class="row">
+
+     {{subject.semester}}
+    </td>
+    <td class="row">
+     {{subject.teacher_name}}
+    </td>
+
+     </tr>
+    </table>
+    {% endfor %}
+    
+     </div>
+     
+</body>
+
+</html>

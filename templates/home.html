@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Attendende Mangement System</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: white;
+         
+        }
+        .top{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: 0px;
+            height: 105px;
+            width: 100vw;
+            background-color:rgb(45, 47, 49);
+            
+        }
+        .logo img{
+            width: 120px;
+            height: 90px;
+            
+        }
+        .logotext{
+            color: white;
+            font-size: 12px; 
+            font-family: 'Playfair Display', serif;
+            width: 200px; 
+            padding: 18px 12px;
+        }
+        #navbar {
+            padding: 10px 0px;
+             
+            background-color:  rgb(226, 125, 58);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            width: 100vw;
+            margin-top: -10px;
+     
+
+        }
+
+        .navigation {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+        }
+
+        .navigation:hover {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            background-color: white;
+            color:rgb(226, 125, 58) ;
+            padding: 8px 12px;
+            text-decoration: none;
+            border: 2px;
+            border-radius: 20px;
+        }
+
+        .navigation:active {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            background-color: white;
+            color: rgb(226, 125, 58);
+            padding: 8px 12px;
+            text-decoration: none;
+            border: 2px;
+            border-radius: 20px;
+        }
+
+        .btn {
+       
+            margin-left: 30px;
+            padding: 7px 13px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            color: rgb(226, 125, 58);
+            border: 2px;
+            border-radius: 20px;
+            text-decoration: none;
+            
+            cursor: pointer;
+
+        }
+        .btn:hover {
+            
+            margin-left: 30px;
+            padding: 7px 13px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            color: rgb(45, 47, 49);
+            border: 2px;
+            border-radius: 20px;
+            text-decoration: none;
+ 
+            cursor: pointer;
+
+        }
+
+        .container-main {
+            
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-left: 0px;
+            margin-right: 0px;
+
+
+        }
+
+        .container h1 {
+            text-align: center;
+            margin: 90px 0px;
+            margin-right: 100px;
+            color: rgb(45, 47, 49);
+            font-size: 65px;
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+             
+
+        }
+
+        .container img {
+             
+            margin-top: 20px;
+            
+            height: 400px;
+        
+        }
+         
+
+
+        @media screen and (max-width: 1024px) {
+ 
+        
+            #navbar {
+                padding: 10px 0px;
+                background-color:  rgb(226, 125, 58);
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                width: 100vw;
+                margin-top: -10px;
+         flex-wrap:wrap;
+    
+            }
+    
+
+             
+            .navigation {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: white;
+                padding: 8px 9px;
+                text-decoration: none;
+            }
+            .btn {
+       
+                margin-left: 10px;
+                padding: 5px 10px;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                color: rgb(226, 125, 58);
+                border: 2px;
+                border-radius: 20px;
+                text-decoration: none;
+                
+                cursor: pointer;
+    
+            }
+            
+            
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                align-items: center;
+
+            }
+
+            .container h1 {
+                text-align: center;
+                margin: 120px 0px;
+                color: rgb(45, 47, 49);
+                font-size: 55px;
+                font-weight: bold;
+                font-family: 'Playfair Display', serif;
+
+
+            }
+
+            .container img {
+                position: relative;
+         
+                height: 400px;
+                width: 400px;
+            }
+
+
+        }
+
+        @media screen and (max-width: 778px) {
+
+
+            #navbar {
+                padding: 10px 0px;
+                background-color:  rgb(226, 125, 58);
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                width: 100vw;
+                margin-top: -10px;
+         flex-wrap:wrap;
+    
+            }
+    
+
+             
+            .navigation {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: white;
+                padding: 8px 9px;
+                text-decoration: none;
+            }
+            .btn {
+       
+                margin-left: 10px;
+                padding: 5px 10px;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                color: rgb(226, 125, 58);
+                border: 2px;
+                border-radius: 20px;
+                text-decoration: none;
+                
+                cursor: pointer;
+    
+            }
+            
+
+            .container {
+                display: flex;
+                flex-flow: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                align-items: center;
+
+            }
+
+            .container h1 {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                color: rgb(45, 47, 49);
+                font-size: 38px;
+                font-weight: bold;
+                font-family: 'Playfair Display', serif;
+
+
+            }
+
+            .container img {
+                
+                height: 270px;
+                width: 270px;
+                text-align: center;
+            }
+
+
+        }
+
+        @media screen and (max-width: 480px) {
+            .top{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items:center;
+                margin: 0px auto;
+                height: 85px;
+                width: 100vw;
+                
+                background-color:rgb(45, 47, 49);
+                
+            }
+
+             
+            .logo img{
+                width: 90px;
+                height: 70px;
+                
+            }
+            .logotext{
+                color: white;
+                font-size: 10px; 
+                font-family: 'Playfair Display', serif;
+                width: 170px; 
+                padding: 13px 10px;
+            }
+            #navbar {
+                padding: 10px 0px;
+                background-color:  rgb(226, 125, 58);
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                width: 100vw;
+                margin-top: -10px;
+         flex-wrap:wrap;
+    
+            }
+    
+
+             
+            .navigation {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: white;
+                padding: 8px 9px;
+                text-decoration: none;
+            }
+             
+            .btn {
+       
+                margin-left: 10px;
+                padding: 3px 8px;
+                font-size: 14px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                color: rgb(226, 125, 58);
+                border: 2px;
+                border-radius: 20px;
+                text-decoration: none;
+                
+                cursor: pointer;
+    
+            }
+            
+            .container-main {
+            
+                display: flex;
+                flex-flow: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                align-items: center;
+    
+            }
+
+            
+
+            
+
+            .container h1 {
+                text-align: center;
+                margin: 50px;
+                margin-bottom: 20px;
+                color: rgb(45, 47, 49);
+                font-size: 35px;
+                font-weight: bold;
+                font-family: 'Playfair Display', serif;
+
+
+            }
+
+            .container img {
+            
+                height: 300px;
+                width: 300px;
+             
+            }
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">
+         <img src="static/logo.jpg" alt="">
+        </div>
+        <div class="logotext">
+            <h2>ATTENDANCE MANAGEMENT SYSTEM </h2>
+
+        </div>
+    </div>
+    <nav id="navbar">
+       <a href="home" class="navigation">Home</a>
+        <a href="teachers" class="navigation">Teachers</a>
+        <a href="students" class="navigation">Students</a>
+        <a href="subjects" class="navigation">Subjects</a>
+        <a href="reports" class="navigation">Report</a>
+        <a href="takeattendance" class="navigation">Take Attendence</a>
+        <a href="addteacher" class="navigation">Add Teacher</a>
+        <a href="addstudent" class="navigation">Add Student</a>
+        <a href="addsubject" class="navigation">Add Subject</a>
+
+
+        <a href="logout"><button class="btn"> Log Out</button></a>
+    </nav>
+    <section class="container-main">
+        <div class="container">
+
+            <h1>Attendence <br> Management<br> System</h1>
+        </div>
+        <div class="container">
+
+            <img src="static/home-img.png" alt="">
+        </div>
+    </section>
+    <!-- <footer class="foot">
+        <p>Copyright © 2021 All Rights Reserverd | Students Attendence Management System</p>
+    </footer> -->
+</body>
+
+</html>
